@@ -68,29 +68,29 @@ namespace DecimalToOtherNumberConversion
 
         private static void DtoO()
         {
-            string binaryString = "";
-            Console.Write("Please enter a decimal number to convert it to Binary:- ");
-            int number = int.Parse(Console.ReadLine());
-            while (number > 0)
-            {
-                binaryString = (number % 8).ToString() + binaryString;
-                number /= 8;
-            }
-            Console.WriteLine(binaryString);
-            Console.ReadLine();
-        }
-
-        private static void DtoB()
-        {
             string octalString = "";
             Console.Write("Please enter a decimal number to convert it to Octal:- ");
             int number = int.Parse(Console.ReadLine());
             while (number > 0)
             {
-                octalString = (number % 2).ToString() + octalString;
-                number /= 2;
+                octalString = (number % 8).ToString() + octalString;
+                number /= 8;
             }
             Console.WriteLine(octalString);
+            Console.ReadLine();
+        }
+
+        private static void DtoB()
+        {
+            string binaryString = "";
+            Console.Write("Please enter a decimal number to convert it to Binary:- ");
+            int number = int.Parse(Console.ReadLine());
+            while (number > 0)
+            {
+                binaryString = (number % 2).ToString() + binaryString;
+                number /= 2;
+            }
+            Console.WriteLine(binaryString);
             Console.ReadLine();
         }
     }

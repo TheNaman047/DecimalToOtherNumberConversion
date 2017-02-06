@@ -28,7 +28,7 @@ namespace NumbersToWords
         public static void hundreads(int a)
         {
             int num = a / 100;
-            Console.Write(units(num) + "hundread and ");
+            Console.Write(units(num) + " hundread and ");
             num = a % 100;
             Console.WriteLine(tens_units(num));
             string[] s = new string[] { "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen" };
